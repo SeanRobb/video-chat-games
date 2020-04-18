@@ -1,0 +1,38 @@
+{
+  "name": "node-lambda-template",
+  "version": "0.0.2",
+  "description": "The bare minimum for a node.js app running on Amazon Lambda. Uses node-lambda under the hood to locally run and also deploy your node.js Amazon Lambda application.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/motdotla/node-lambda-template.git"
+  },
+  "author": "motdotla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/motdotla/node-lambda-template/issues"
+  },
+  "homepage": "https://github.com/motdotla/node-lambda-template",
+  "scripts": {
+    "setup": "./node_modules/.bin/node-lambda setup",
+    "test": "mocha --recursive",
+    "test-watch": "mocha --watch --recursive --watch-extensions js",
+    "test-path": "mocha",
+    "test-path-watch": "mocha --watch --watch-extensions js",
+    "lambda": "./node_modules/.bin/node-lambda run --configFile deploy.env",
+    "package": "./node_modules/.bin/node-lambda package",
+    "deploy": "./node_modules/.bin/node-lambda deploy --configFile deploy.env",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.11.0",
+    "eslint-config-google": "^0.9.1",
+    "mocha": "^5.0.5",
+    "node-lambda": "^0.9.0"
+  },
+  "dependencies": {
+    "ramda": "^0.27.0"
+  }
+}
