@@ -30,7 +30,7 @@
     "eslint": "^4.11.0",
     "eslint-config-google": "^0.9.1",
     "mocha": "^5.0.5",
-    "node-lambda": "^0.9.0"
+    "node-lambda": "^1.2.0"
   },
   "dependencies": {
     "ramda": "^0.27.0"
